@@ -3,7 +3,9 @@ const homelist = (req, res) => {
 };
 
 const locationInfo = (req, res) => {
-	res.render('index', { title: 'Location Info' });
+	res.render('location-info', {
+		src: 'https://maps.google.com/maps?q=Bulawayo,%20Zimbabwe&t=&z=14&ie=UTF8&iwloc=&output=embed'
+	});
 };
 
 const addReview = (req, res) => {
