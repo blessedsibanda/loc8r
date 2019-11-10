@@ -1,5 +1,5 @@
 const about = (req, res) => {
-	res.send('about loc8r page');
+	res.render('index', { title: 'About' });
 };
 
 module.exports = {
