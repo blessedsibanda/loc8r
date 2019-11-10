@@ -1,5 +1,5 @@
 const homelist = (req, res) => {
-	res.render('index', { title: 'Loc8r App' });
+	res.render('locations-list', {});
 };
 
 const locationInfo = (req, res) => {
