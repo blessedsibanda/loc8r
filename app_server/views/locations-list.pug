@@ -18,12 +18,12 @@ block content
               small &nbsp;
                 +outputRating(location.rating)
          
-              span.badge.badge-pill.badge-default.float-right 100m
+              span.badge.badge-pill.badge-default.float-right= location.distance
             p.address= location.address
             .facilities 
-              span.badge.badge-warning Hot drinks 
-              span.badge.badge-warning Food
-              span.badge.badge-warning Premium wifi
+              each facility in location.facilities
+                span.badge.badge-warning= facility 
+        
     
     .col-12.col-md-4  
       p.lead= sidebar
